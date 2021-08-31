@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoAndroid</string>
+    <string name="titre_prenom">Prénom :</string>
+    <string name="titre_nom">Nom :</string>
+    <string name="titre_majeur">Majeur</string>
+    <string name="titre_valider">Valider</string>
+</resources>
