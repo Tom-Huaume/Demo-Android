@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/tv_un"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_rowSpan="2"
+            android:text="UN"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_deux"
+            android:layout_height="100dp"
+            android:text="DEUX"
+            android:background="#555555"
+            android:textColor="#FFFFFF"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="fill"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_trois"
+            android:text="TROIS"
+            android:background="#00FF00"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="fill"
+            android:gravity="bottom|right"
+            android:layout_margin="5dp"/>
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_bouton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bouton 1"
+            />
+
+        <Button
+            android:id="@+id/btn_bouton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bouton 2"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/btn_bouton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bouton 3"
+            android:layout_below="@+id/btn_bouton1"
+            android:layout_marginLeft="80dp"/>
+
+        <Button
+            android:id="@+id/btn_bouton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bouton 4"
+            android:layout_below="@+id/btn_bouton2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="80dp"
+            />
+
+        <Button
+            android:id="@+id/btn_bouton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bouton 5"
+            android:layout_below="@+id/btn_bouton3"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
